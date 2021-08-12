@@ -1,0 +1,26 @@
+.wrapper {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: inline;
+
+  & + & {
+    margin-left: 24px;
+  }
+}
+
+.link {
+  position: relative;
+  font-weight: 600;
+
+  &__active:before {
+    content: "";
+    height: 5px;
+    background-color: #ffea60;
+    width: 100%;
+    left: 1px;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+  }
+}
