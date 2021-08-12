@@ -1,0 +1,32 @@
+.wrapper {
+  & + & {
+    margin-top: 24px;
+  }
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+
+  span {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: var(--robotic-font);
+  }
+}
+
+.outer {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(var(--secondary-color__rgb), 0.2);
+  position: relative;
+}
+
+.inner {
+  position: absolute;
+  height: 6px;
+  top: -2px;
+  background-color: var(--main-color);
+  width: var(--bar-fill);
+}

@@ -19,7 +19,8 @@
     font-size: 2.5em;
 
     span:not(:global .typed-cursor) {
-      color: var(--main-color);
+      // color: var(--main-color);
+      color: var(--text-color);
 
       &:before {
         content: "\a";

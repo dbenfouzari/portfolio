@@ -10,6 +10,7 @@ const useTyping = <T extends HTMLElement>() => {
   const typed = useRef<Typed | null>(null);
 
   const [imageUrl, setImageUrl] = useState(TYPING_ELEMENTS.map((elm) => elm.image)[0]);
+  const [color, setColor] = useState(TYPING_ELEMENTS.map((elm) => elm.color)[0]);
 
   useEffect(() => {
     const options = {
@@ -28,6 +29,7 @@ const useTyping = <T extends HTMLElement>() => {
       },
       preStringTyped: (arrayPos: number) => {
         setImageUrl(TYPING_ELEMENTS.map((elm) => elm.image)[arrayPos]);
+        setColor(TYPING_ELEMENTS.map((elm) => elm.color)[arrayPos]);
       },
     };
 
@@ -40,7 +42,7 @@ const useTyping = <T extends HTMLElement>() => {
     };
   }, []);
 
-  return [el, imageUrl] as const;
+  return [el, imageUrl, color] as const;
 };
 
 export default useTyping;

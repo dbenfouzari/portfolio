@@ -1,0 +1,91 @@
+.wrapper {
+  display: flex;
+  flex: 1;
+  padding-block: 128px;
+  padding-inline: 96px;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+}
+
+.section_name {
+  font-family: var(--robotic-font);
+  display: inline-block;
+  color: rgba(var(--secondary-color__rgb), 0.4);
+  top: -50px;
+  position: absolute;
+  font-size: 18px;
+
+  &:before {
+    content: "{/* ";
+  }
+
+  &:after {
+    content: " */ }";
+  }
+}
+
+.title {
+  font-family: var(--robotic-font);
+  font-size: 2em;
+}
+
+.description {
+  margin-block: 24px;
+  color: rgba(var(--secondary-color__rgb), 0.6);
+  line-height: 1.8;
+}
+
+.right {
+  flex: 1;
+  max-width: 500px;
+  @media (max-width: 700px) {
+    display: none;
+  }
+}
+
+.left {
+  flex: 1;
+  position: relative;
+  padding-right: 96px;
+  max-width: 800px;
+  @media (max-width: 700px) {
+    padding-right: 0;
+  }
+}
+
+.logo {
+  max-width: 500px;
+}
+
+.skills {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+}
+
+.skill_rectangle {
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+  background-color: white;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px;
+  aspect-ratio: 16 / 9;
+  // width: 200px;
+  width: 100%;
+
+  &:nth-child(even) {
+    margin-top: 12px;
+  }
+}
+
+.skill_logo {
+  max-width: 100px;
+  max-height: 100px;
+}

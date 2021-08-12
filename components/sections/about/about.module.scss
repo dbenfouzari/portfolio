@@ -45,11 +45,17 @@
 }
 
 .left {
+  @media (max-width: 700px) {
+    display: none;
+  }
   flex: 1;
   max-width: 500px;
 }
 
 .right {
+  @media (max-width: 700px) {
+    padding-left: 0;
+  }
   flex: 1;
   position: relative;
   padding-left: 96px;

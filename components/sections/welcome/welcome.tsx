@@ -8,14 +8,14 @@ import classes from './welcome.module.scss';
 interface WelcomeProps {}
 
 const WelcomeSection: FC<WelcomeProps> = () => {
-  const [typingRef, imageUrl] = useTyping<HTMLHeadingElement>();
+  const [typingRef, imageUrl, color] = useTyping<HTMLHeadingElement>();
   const ImageElement = useAnimatedImage(imageUrl);
 
   return (
     <div className={classes.welcome}>
       <div className={classes.left}>
         <div className="div">
-          <Heading ref={typingRef} />
+          <Heading ref={typingRef} color={color} />
 
           <h3 role="doc-subtitle">
             Web <span>Developer</span> and Mobile Developer working in development field for 10

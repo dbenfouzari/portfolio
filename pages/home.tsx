@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Layout from '../components/layout';
 import Section from '../components/section';
 import AboutSection from '../components/sections/about';
+import SkillsSection from '../components/sections/skills';
 import WelcomeSection from '../components/sections/welcome';
 
 interface HomeProps {}
@@ -20,7 +21,9 @@ const Home: NextPage<HomeProps> = () => (
     <Section id="about">
       <AboutSection />
     </Section>
-    <Section id="skills">skills</Section>
+    <Section id="skills">
+      <SkillsSection />
+    </Section>
     <Section id="experiences">experiences</Section>
   </Layout>
 );
