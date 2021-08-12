@@ -3,6 +3,7 @@
   margin: 0;
   list-style-type: none;
   display: inline;
+  font-family: 'Source Code Pro', monospace;
 
   & + & {
     margin-left: 24px;
@@ -16,7 +17,7 @@
   &__active:before {
     content: "";
     height: 5px;
-    background-color: #ffea60;
+    background-color: var(--main-color);
     width: 100%;
     left: 1px;
     position: absolute;

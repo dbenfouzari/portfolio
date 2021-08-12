@@ -14,12 +14,15 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-scroll": "^1.8.3",
-    "sass": "^1.37.5"
+    "react-transition-group": "^4.4.2",
+    "sass": "^1.37.5",
+    "typed.js": "^2.0.12"
   },
   "devDependencies": {
     "@dbenfouzari/cli": "^5.1.1",
     "@types/react": "17.0.17",
     "@types/react-scroll": "^1.8.3",
+    "@types/react-transition-group": "^4.4.2",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.0",

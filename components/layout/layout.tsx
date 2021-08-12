@@ -14,9 +14,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => (
 
     <div>
       <AppBar>
-        <AppBar.Link to="home">Home</AppBar.Link>
+        <AppBar.Link to="welcome">Home</AppBar.Link>
         <AppBar.Link to="about">About</AppBar.Link>
         <AppBar.Link to="skills">Skills</AppBar.Link>
+        <AppBar.Link to="experiences">Experiences</AppBar.Link>
       </AppBar>
 
       <div className={classes.content}>{children}</div>

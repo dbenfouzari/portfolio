@@ -2,10 +2,10 @@ import { NextPage } from 'next';
 import Head from 'next/head';
 
 import Layout from '../components/layout';
+import Section from '../components/section';
+import WelcomeSection from '../components/sections/welcome';
 
-interface HomeProps {
-  toto?: 'tata';
-}
+interface HomeProps {}
 
 const Home: NextPage<HomeProps> = () => (
   <Layout>
@@ -13,15 +13,12 @@ const Home: NextPage<HomeProps> = () => (
       <title>Donovan BENFOUZARI</title>
     </Head>
 
-    <div style={{ height: '100vh' }} id="home">
-      home
-    </div>
-    <div style={{ height: '100vh' }} id="about">
-      about
-    </div>
-    <div style={{ height: '100vh' }} id="skills">
-      skills
-    </div>
+    <Section id="welcome">
+      <WelcomeSection />
+    </Section>
+    <Section id="about">about</Section>
+    <Section id="skills">skills</Section>
+    <Section id="experiences">experiences</Section>
   </Layout>
 );
 
