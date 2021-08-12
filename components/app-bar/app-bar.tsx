@@ -25,10 +25,6 @@ const AppBar: AppBar = ({ children }) => (
     </div>
 
     <ul className={classes.links}>{children}</ul>
-
-    <div className={classes.right}>
-      <button className={classes.button}>Contact Me</button>
-    </div>
   </nav>
 );
 

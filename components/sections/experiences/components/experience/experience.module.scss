@@ -1,0 +1,47 @@
+.wrapper {
+  border-radius: 4px;
+  padding: 12px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+  border-left: 8px solid var(--main-color);
+  display: flex;
+  transition: transform .2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.left {
+  flex: 1;
+}
+
+.right {}
+
+.role_line {
+  font-family: var(--robotic-font);
+}
+
+.company {
+  position: relative;
+  color: rgba(var(--secondary-color__rgb), .6);
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 6px);
+    background-color: rgba(var(--main-color__rgb), 0.3);
+    z-index: -1;
+    top: 8px;
+    left: 8px;
+  }
+}
+
+.date {
+  color: rgba(var(--secondary-color__rgb), 0.6);
+  font-size: 14px;
+}
+
+.picture {
+  border-radius: 50%;
+}

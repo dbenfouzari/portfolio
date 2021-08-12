@@ -31,13 +31,20 @@ const SkillsSection: React.FC<SkillsProps> = () => (
     <div className={classes.right}>
       <div className={classes.skills}>
         <div className={classes.skill_rectangle}>
-          <Image src="/assets/react.svg" width={100} height={100} className={classes.skill_logo} />
+          <Image
+            alt="React skill"
+            src="/assets/react.svg"
+            width={100}
+            height={100}
+            className={classes.skill_logo}
+          />
 
           <span>React.js</span>
         </div>
 
         <div className={classes.skill_rectangle}>
           <Image
+            alt="TypeScript skill"
             src="/assets/typescript.svg"
             width={100}
             height={100}
@@ -48,13 +55,20 @@ const SkillsSection: React.FC<SkillsProps> = () => (
         </div>
 
         <div className={classes.skill_rectangle}>
-          <Image src="/assets/react.svg" width={100} height={100} className={classes.skill_logo} />
+          <Image
+            alt="React-Native skill"
+            src="/assets/react.svg"
+            width={100}
+            height={100}
+            className={classes.skill_logo}
+          />
 
           <span>React-Native</span>
         </div>
 
         <div className={classes.skill_rectangle}>
           <Image
+            alt="Flutter skill"
             src="/assets/flutter.svg"
             width={100}
             height={100}

@@ -6,6 +6,7 @@ const AboutSection = () => (
   <div className={classes.wrapper}>
     <div className={classes.left}>
       <Image
+        alt="brackets"
         src="/assets/brackets.svg"
         width={500}
         height={500}
