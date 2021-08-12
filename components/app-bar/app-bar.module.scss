@@ -20,7 +20,7 @@
 }
 
 .title {
-  font-family: 'Source Code Pro', monospace;
+  font-family: var(--robotic-font);
   border-right: 1px solid #dedede;
   margin-right: var(--space-around);
   font-weight: bold;

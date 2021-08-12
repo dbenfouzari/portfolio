@@ -1,4 +1,5 @@
 .section {
   display: flex;
   min-height: calc(100vh - var(--app-bar-height));
+  position: relative;
 }

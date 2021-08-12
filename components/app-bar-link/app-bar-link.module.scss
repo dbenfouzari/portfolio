@@ -3,7 +3,7 @@
   margin: 0;
   list-style-type: none;
   display: inline;
-  font-family: 'Source Code Pro', monospace;
+  font-family: var(--robotic-font);
 
   & + & {
     margin-left: 24px;
