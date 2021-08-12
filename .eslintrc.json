@@ -1,3 +1,11 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next", "next/core-web-vitals", "plugin:@typescript-eslint/recommended", "prettier"],
+  "plugins": ["prettier", "simple-import-sort"],
+  "rules": {
+    "prettier/prettier": "error",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "error"
+  }
 }
