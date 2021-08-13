@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React, { FC, ReactElement } from 'react';
 
 import useWindowSize from '../../hooks/useWindowSize';
@@ -16,6 +17,7 @@ type AppBar = FC<AppBarProps> & {
 
 const AppBar: AppBar = ({ children }) => {
   const windowSize = useWindowSize();
+  const { locale } = useRouter();
 
   return windowSize === 'xs' ? (
     <AppBarMobile>{children}</AppBarMobile>
@@ -32,6 +34,10 @@ const AppBar: AppBar = ({ children }) => {
       </div>
 
       <ul className={classes.links}>{children}</ul>
+
+      <Link href="/" locale={locale === 'fr' ? 'en' : 'fr'}>
+        {locale === 'fr' ? 'EN' : 'FR'}
+      </Link>
     </nav>
   );
 };
