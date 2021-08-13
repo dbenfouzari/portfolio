@@ -28,17 +28,25 @@ const AboutSection = () => {
 
         <div className={classes.description}>
           <p>
-            <span className={classes.emoji}>🖥️</span> I&apos;m a self-taught developer since many
-            years now. I started when I got a computer - I was 12.
+            <Trans
+              i18nKey="about.self-taught"
+              ns="sections"
+              components={{ 1: <span className={classes.emoji} /> }}
+            />
           </p>
           <p>
-            <span className={classes.emoji}>⚛️</span> Since then I learn everyday, and I&apos;m a
-            professional developer since 10 years. I started with Ruby on Rails for 5 years, then I
-            got to the other side : frontend with React.js.
+            <Trans
+              i18nKey="about.course"
+              ns="sections"
+              components={{ 1: <span className={classes.emoji} /> }}
+            />
           </p>
           <p>
-            <span className={classes.emoji}>📱</span> I really love JavaScript, TypeScript and
-            React. This is why I went to React-Native : write React code, for mobiles.
+            <Trans
+              i18nKey="about.love"
+              ns="sections"
+              components={{ 1: <span className={classes.emoji} /> }}
+            />
           </p>
         </div>
       </div>
