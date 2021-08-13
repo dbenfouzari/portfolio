@@ -8,7 +8,7 @@ import classes from './layout.module.scss';
 interface LayoutTwoProps {}
 
 const Layout: FC<LayoutTwoProps> = ({ children }) => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation('appbar');
 
   return (
     <div className={classes.layout}>
@@ -17,10 +17,10 @@ const Layout: FC<LayoutTwoProps> = ({ children }) => {
       `}</style>
 
       <AppBar>
-        <AppBar.Link to="welcome">{t('appbar-home')}</AppBar.Link>
-        <AppBar.Link to="about">About</AppBar.Link>
-        <AppBar.Link to="skills">Skills</AppBar.Link>
-        <AppBar.Link to="experiences">Experiences</AppBar.Link>
+        <AppBar.Link to="welcome">{t('link-home')}</AppBar.Link>
+        <AppBar.Link to="about">{t('link-about')}</AppBar.Link>
+        <AppBar.Link to="skills">{t('link-skills')}</AppBar.Link>
+        <AppBar.Link to="experiences">{t('link-experiences')}</AppBar.Link>
       </AppBar>
 
       <div className={classes.content}>{children}</div>

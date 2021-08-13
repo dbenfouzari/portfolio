@@ -1,9 +1,38 @@
+import { useTranslation } from 'next-i18next';
 import { useEffect, useRef, useState } from 'react';
 import Typed from 'typed.js';
 
-import TYPING_ELEMENTS from './constants';
-
 const useTyping = <T extends HTMLElement>() => {
+  const { t } = useTranslation('sections');
+
+  const TYPING_ELEMENTS = [
+    {
+      text: t('welcome.roles.web'),
+      image: '/assets/html5.svg',
+      color: '#E34F26',
+    },
+    {
+      text: t('welcome.roles.mobile'),
+      image: '/assets/mobile.svg',
+      color: '#E0995E',
+    },
+    {
+      text: t('welcome.roles.react'),
+      image: '/assets/react.svg',
+      color: '#61DAFB',
+    },
+    {
+      text: t('welcome.roles.react-native'),
+      image: '/assets/react-native.png',
+      color: '#61DAFB',
+    },
+    {
+      text: t('welcome.roles.typescript'),
+      image: '/assets/typescript.svg',
+      color: '#3178c6',
+    },
+  ];
+
   // Create reference to store the DOM element containing the animation.
   const el = useRef<T>(null);
   // Create reference to store the Typed instance itself.

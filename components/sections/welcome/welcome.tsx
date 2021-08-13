@@ -1,3 +1,4 @@
+import { useTranslation } from 'next-i18next';
 import { FC } from 'react';
 
 import Heading from './heading';
@@ -10,6 +11,7 @@ interface WelcomeProps {}
 const WelcomeSection: FC<WelcomeProps> = () => {
   const [typingRef, imageUrl, color] = useTyping<HTMLHeadingElement>();
   const ImageElement = useAnimatedImage(imageUrl);
+  const { t } = useTranslation('sections');
 
   return (
     <div className={classes.welcome}>
@@ -17,10 +19,7 @@ const WelcomeSection: FC<WelcomeProps> = () => {
         <div className="div">
           <Heading ref={typingRef} color={color} />
 
-          <h3 role="doc-subtitle">
-            Web <span>Developer</span> and Mobile Developer working in development field for 10
-            years so far, specialized in React/React-Native.
-          </h3>
+          <h3 role="doc-subtitle" dangerouslySetInnerHTML={{ __html: t('welcome.presentation') }} />
 
           <dl>
             <div>
