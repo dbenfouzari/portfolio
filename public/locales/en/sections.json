@@ -5,5 +5,8 @@
   "welcome.roles.react": "React developer",
   "welcome.roles.react-native": "React-Native developer",
   "welcome.roles.typescript": "TypeScript developer",
-  "welcome.presentation": "Web <span>Developer</span> and Mobile Developer working in development field for 10\n            years so far, specialized in React/React-Native."
+  "welcome.presentation": "Web <span>Developer</span> and Mobile Developer working in development field for 10 years so far, specialized in React/React-Native.",
+
+  "about.name": "about me",
+  "about.title": "Need Beautiful Code?\n<br />I can Help You!"
 }
