@@ -16,7 +16,8 @@
     "react-scroll": "^1.8.3",
     "react-transition-group": "^4.4.2",
     "sass": "^1.37.5",
-    "typed.js": "^2.0.12"
+    "typed.js": "^2.0.12",
+    "use-debounce": "^7.0.0"
   },
   "devDependencies": {
     "@dbenfouzari/cli": "^5.1.1",
