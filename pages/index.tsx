@@ -1,4 +1,4 @@
-import { NextPage } from 'next';
+import { GetServerSideProps, NextPage } from 'next';
 import Head from 'next/head';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
@@ -32,10 +32,13 @@ const Home: NextPage<HomeProps> = () => (
   </Layout>
 );
 
-export const getServerSideProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ['common'])),
-  },
-});
+export const getServerSideProps: GetServerSideProps = async ({ locale }) =>
+  locale
+    ? {
+        props: {
+          ...(await serverSideTranslations(locale, ['common'])),
+        },
+      }
+    : { props: {} };
 
 export default Home;
