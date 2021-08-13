@@ -57,7 +57,8 @@ const SkillsSection: React.FC<SkillsProps> = () => (
         <div className={classes.skill_rectangle}>
           <Image
             alt="React-Native skill"
-            src="/assets/react.svg"
+            src="/assets/react-native.png"
+            objectFit="contain"
             width={100}
             height={100}
             className={classes.skill_logo}

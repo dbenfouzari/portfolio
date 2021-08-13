@@ -16,7 +16,7 @@ const TYPING_ELEMENTS = [
   },
   {
     text: 'React-Native developer',
-    image: '/assets/react.svg',
+    image: '/assets/react-native.png',
     color: '#61DAFB',
   },
   {

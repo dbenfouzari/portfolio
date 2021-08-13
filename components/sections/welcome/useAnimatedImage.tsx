@@ -10,6 +10,7 @@ const useAnimatedImage = (imageUrl: string): JSX.Element => (
     layout="responsive"
     width={500}
     height={500}
+    objectFit="contain"
     className={classes.logo}
   />
 );
