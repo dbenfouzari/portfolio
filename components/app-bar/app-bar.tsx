@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
 import React, { FC, ReactElement } from 'react';
 
 import useWindowSize from '../../hooks/useWindowSize';
@@ -16,6 +17,7 @@ type AppBar = FC<AppBarProps> & {
 };
 
 const AppBar: AppBar = ({ children }) => {
+  const { t } = useTranslation('common');
   const windowSize = useWindowSize();
   const { locale } = useRouter();
 
@@ -35,8 +37,8 @@ const AppBar: AppBar = ({ children }) => {
 
       <ul className={classes.links}>{children}</ul>
 
-      <Link href="/" locale={locale === 'fr' ? 'en' : 'fr'}>
-        {locale === 'fr' ? 'EN' : 'FR'}
+      <Link href="/" locale={locale === 'en' ? 'fr' : 'en'}>
+        <button>{t('change-locale')}</button>
       </Link>
     </nav>
   );

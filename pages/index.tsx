@@ -1,5 +1,6 @@
-import { NextPage } from 'next';
+import { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import Layout from '../components/layout';
 import Section from '../components/section';
@@ -30,5 +31,11 @@ const Home: NextPage<HomeProps> = () => (
     </Section>
   </Layout>
 );
+
+export const getStaticProps: GetStaticProps = async ({ defaultLocale = 'en', locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale || defaultLocale, ['common'])),
+  },
+});
 
 export default Home;
