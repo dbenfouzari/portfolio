@@ -27,3 +27,8 @@
 .links {
   flex: 1;
 }
+
+.flag_wrapper {
+  padding-inline: var(--space-around);
+  border-left: 1px solid #dedede;
+}

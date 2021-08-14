@@ -11,5 +11,12 @@
   "about.title": "Need Beautiful Code?\n<br />I can Help You!",
   "about.self-taught": "<1>\uD83D\uDDA5️️</1> I'm a self-taught developer since many years now. I started when I got a computer - I was 12.",
   "about.course": "<1>⚛️</1> Since then I learn everyday, and I&apos;m a professional developer since 10 years. I started with Ruby on Rails for 5 years, then I got to the other side : frontend with React.js.",
-  "about.love": "<1>\uD83D\uDCF1</1> I really love JavaScript, TypeScript and React. This is why I went to React-Native : write React code, for mobiles."
+  "about.love": "<1>\uD83D\uDCF1</1> I really love JavaScript, TypeScript and React. This is why I went to React-Native : write React code, for mobiles.",
+
+  "skills.name": "Skills",
+  "skills.title": "What My Development<br />Skills Include",
+  "skills.description": "These are the words I live by in everything I do. Every story I tell, every app I build, and every line of code I write must not only look beautiful.",
+
+  "experiences.name": "experiences",
+  "experiences.title": "This is where<br />I worked!"
 }

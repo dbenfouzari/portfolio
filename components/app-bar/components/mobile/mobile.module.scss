@@ -105,6 +105,13 @@
   }
 }
 
+.flag_wrapper {
+  padding-inline: var(--space-around);
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
 //#region Transitions
 .overlay_transition {
   &__enter {

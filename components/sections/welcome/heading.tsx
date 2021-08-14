@@ -1,4 +1,4 @@
-import { useTranslation } from 'next-i18next';
+import { Trans, useTranslation } from 'next-i18next';
 import { forwardRef } from 'react';
 
 interface HeadingProps {
@@ -14,7 +14,7 @@ const Heading = forwardRef<HTMLHeadingElement, HeadingProps>(({ color }, ref) =>
         --text-color: ${color};
       `}</style>
       <h1>
-        {t('welcome.heading')}
+        <Trans i18nKey="welcome.heading" ns="sections" />
         <span id="keep">React / React-Native / TypeScript developer</span>
         <span ref={ref} />
       </h1>

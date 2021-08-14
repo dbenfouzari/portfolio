@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React, { FC, useCallback, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
@@ -28,6 +29,11 @@ const AppBarMobile: FC<MobileProps> = ({ children }) => {
     setIsOpen((v) => !v);
   }, []);
 
+  const { locale } = useRouter();
+
+  const svgUrl = locale === 'fr' ? '/en.svg' : '/fr.svg';
+  const linkLocale = locale === 'fr' ? 'en' : 'fr';
+
   return (
     <>
       <CSSTransition in={isOpen} timeout={300} classNames={overlayClassNames} unmountOnExit>
@@ -52,6 +58,12 @@ const AppBarMobile: FC<MobileProps> = ({ children }) => {
               <br />
               BENFOUZARI
             </a>
+          </Link>
+        </div>
+
+        <div className={classes.flag_wrapper}>
+          <Link href="/" locale={linkLocale}>
+            <Image src={svgUrl} width={40} height={40} objectFit="contain" />
           </Link>
         </div>
 

@@ -1,4 +1,6 @@
+import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React, { FC, ReactElement } from 'react';
 
 import useWindowSize from '../../hooks/useWindowSize';
@@ -16,6 +18,10 @@ type AppBar = FC<AppBarProps> & {
 
 const AppBar: AppBar = ({ children }) => {
   const windowSize = useWindowSize();
+  const { locale } = useRouter();
+
+  const svgUrl = locale === 'fr' ? '/en.svg' : '/fr.svg';
+  const linkLocale = locale === 'fr' ? 'en' : 'fr';
 
   return windowSize === 'xs' ? (
     <AppBarMobile>{children}</AppBarMobile>
@@ -32,6 +38,12 @@ const AppBar: AppBar = ({ children }) => {
       </div>
 
       <ul className={classes.links}>{children}</ul>
+
+      <div className={classes.flag_wrapper}>
+        <Link href="/" locale={linkLocale}>
+          <Image src={svgUrl} width={40} height={40} objectFit="contain" />
+        </Link>
+      </div>
     </nav>
   );
 };

@@ -1,5 +1,5 @@
 {
-  "welcome.heading": "Bonjour ! Je m'appelle Donovan BENFOUZARI -",
+  "welcome.heading": "Bonjour ! Je m'appelle<br />Donovan BENFOUZARI -",
   "welcome.roles.web": "Développeur web",
   "welcome.roles.mobile": "Développeur mobile",
   "welcome.roles.react": "Développeur React",
@@ -11,5 +11,12 @@
   "about.title": "Besoin d'un Joli Code?\n<br />Je peux vous aider !",
   "about.self-taught": "<1>\uD83D\uDDA5️</1> Je suis développeur autodidacte depuis plusieurs années. J'ai démarré lorsque j'ai eu un ordinateur - j'avais 12 ans.",
   "about.course": "<1>⚛️</1> Depuis j'apprends tous les jours, et suis développeur professionnel depuis 10 ans. J'ai démarré avec Ruby on Rails pendant 5 ans, puis je suis allé de l'autre côté : le frontend avec React.js",
-  "about.love": "<1>\uD83D\uDCF1</1> J'adore JavaScript, TypeScript et React. C'est naturellement que je me suis dirigé vers React-native : écrire du code React, pour les mobiles."
+  "about.love": "<1>\uD83D\uDCF1</1> J'adore JavaScript, TypeScript et React. C'est naturellement que je me suis dirigé vers React-native : écrire du code React, pour les mobiles.",
+
+  "skills.name": "compétences",
+  "skills.title": "Ce qu'incluent<br />mes Compétences",
+  "skills.description": "Ce sont les mots avec lesquels je vis dans tout ce que je fais. Chaque histoire que je raconte, chaque application que je crée et chaque ligne de code que j'écris ne doit pas seulement être belle.",
+
+  "experiences.name": "expériences",
+  "experiences.title": "Où j'ai<br />travaillé !"
 }
