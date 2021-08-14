@@ -1,10 +1,10 @@
 .wrapper {
   border-radius: 4px;
   padding: 12px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-left: 8px solid var(--main-color);
   display: flex;
-  transition: transform .2s ease;
+  transition: transform 0.2s ease;
 
   &:hover {
     transform: scale(1.1);
@@ -15,7 +15,8 @@
   flex: 1;
 }
 
-.right {}
+.right {
+}
 
 .role_line {
   font-family: var(--robotic-font);
@@ -23,10 +24,10 @@
 
 .company {
   position: relative;
-  color: rgba(var(--secondary-color__rgb), .6);
+  color: rgba(var(--secondary-color__rgb), 0.6);
 
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     height: calc(100% - 6px);

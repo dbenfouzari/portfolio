@@ -15,7 +15,7 @@
   font-weight: 600;
 
   &__active:before {
-    content: "";
+    content: '';
     height: 5px;
     background-color: var(--main-color);
     width: 100%;

@@ -8,7 +8,7 @@
   :global {
     .typed-cursor {
       font-size: 32px;
-      color: rgba(0, 0, 0, .3);
+      color: rgba(0, 0, 0, 0.3);
       margin-left: 10px;
     }
   }
@@ -23,7 +23,7 @@
       color: var(--text-color);
 
       &:before {
-        content: "\a";
+        content: '\a';
         white-space: pre;
       }
     }
@@ -41,7 +41,7 @@
       position: relative;
 
       &:after {
-        content: "";
+        content: '';
         background-color: rgba(var(--main-color__rgb), 0.4);
         width: calc(100% - 3px);
         position: absolute;
@@ -65,7 +65,7 @@
     font-family: var(--robotic-font);
 
     &:after {
-      content: ": ";
+      content: ': ';
     }
   }
 
@@ -74,7 +74,7 @@
     margin-top: 8px;
 
     &:after {
-      content: "\a";
+      content: '\a';
       white-space: pre;
     }
   }
@@ -109,10 +109,14 @@
   opacity: 1;
   width: 100%;
   height: 100%;
-  animation: logo-appear .4s ease-in-out;
+  animation: logo-appear 0.4s ease-in-out;
 }
 
 @keyframes logo-appear {
-  from { opacity: 0 }
-  to { opacity: 1 }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
