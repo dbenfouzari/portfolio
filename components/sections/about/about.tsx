@@ -11,12 +11,14 @@ const AboutSection = () => {
     <div className={classes.wrapper}>
       <div className={classes.left}>
         <Image
-          alt="brackets"
-          src="/assets/brackets.svg"
+          alt="Author"
+          src="/me-dc.jpeg"
           width={500}
           height={500}
           layout="responsive"
           className={classes.logo}
+          objectFit="cover"
+          objectPosition="left top"
         />
       </div>
 
