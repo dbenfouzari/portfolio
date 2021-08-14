@@ -34,6 +34,18 @@
   margin-block: 24px;
   color: rgba(var(--secondary-color__rgb), 0.6);
   line-height: 1.8;
+
+  ul {
+    list-style-type: none;
+  }
+
+  ul > ul {
+    margin-left: 24px;
+  }
+
+  li + li, ul > li {
+    margin-top: 12px;
+  }
 }
 
 .right {

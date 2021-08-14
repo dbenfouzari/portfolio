@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Trans, useTranslation } from 'next-i18next';
+import React from 'react';
 
 import classes from './about.module.scss';
 

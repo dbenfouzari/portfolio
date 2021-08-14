@@ -1,13 +1,24 @@
 import Image from 'next/image';
 import { Trans, useTranslation } from 'next-i18next';
-import React from 'react';
+import { FC } from 'react';
 
 import ProgressBar from '../../progress-bar';
 import classes from './skills.module.scss';
 
 interface SkillsProps {}
 
-const SkillsSection: React.FC<SkillsProps> = () => {
+interface AboutItemProps {
+  icon: string | JSX.Element;
+  text: string;
+}
+
+const AboutItem: FC<AboutItemProps> = ({ icon, text }) => (
+  <li>
+    {icon} {text}
+  </li>
+);
+
+const SkillsSection: FC<SkillsProps> = () => {
   const { t } = useTranslation('sections');
 
   return (
@@ -20,6 +31,33 @@ const SkillsSection: React.FC<SkillsProps> = () => {
         </h3>
 
         <div className={classes.description}>{t('skills.description')}</div>
+
+        <div className={classes.description}>
+          {t('skills.list.title')}
+          <ul>
+            <AboutItem icon="🧠" text={t('skills.list.brain')} />
+            <AboutItem icon="💪" text={t('skills.list.strong')} />
+            <AboutItem icon="🚀" text={t('skills.list.rocket')} />
+            <AboutItem icon="🦍" text={t('skills.list.gorilla')} />
+
+            <ul>
+              <AboutItem
+                icon={
+                  <Image alt="TypeScript" src="/assets/typescript.svg" width={18} height={18} />
+                }
+                text={t('skills.list.tools.typescript')}
+              />
+              <AboutItem
+                icon={<Image alt="StoryBook" src="/assets/storybook.svg" width={18} height={18} />}
+                text={t('skills.list.tools.storybook')}
+              />
+              <AboutItem
+                icon={<Image alt="Jest" src="/assets/jest.svg" width={18} height={18} />}
+                text={t('skills.list.tools.jest')}
+              />
+            </ul>
+          </ul>
+        </div>
 
         <ProgressBar label="React.js" percentage={90} />
         <ProgressBar label="TypeScript" percentage={90} />
@@ -51,6 +89,30 @@ const SkillsSection: React.FC<SkillsProps> = () => {
             />
 
             <span>TypeScript</span>
+          </div>
+
+          <div className={classes.skill_rectangle}>
+            <Image
+              alt="Jest skill"
+              src="/assets/jest.svg"
+              width={100}
+              height={100}
+              className={classes.skill_logo}
+            />
+
+            <span>Jest</span>
+          </div>
+
+          <div className={classes.skill_rectangle}>
+            <Image
+              alt="Storybook skill"
+              src="/assets/storybook.svg"
+              width={100}
+              height={100}
+              className={classes.skill_logo}
+            />
+
+            <span>Storybook</span>
           </div>
 
           <div className={classes.skill_rectangle}>

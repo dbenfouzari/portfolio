@@ -8,7 +8,7 @@
   "welcome.presentation": "<span>Développeur</span> Web et Mobile travaillant dans le monde du développement depuis 10 ans, spécialisé en React/React-Native.",
 
   "about.name": "à propos de moi",
-  "about.title": "Besoin d'un Joli Code?\n<br />Je peux vous aider !",
+  "about.title": "Besoin d'un Code Robuste & Joli ?\n<br />Je peux vous aider !",
   "about.self-taught": "<1>\uD83D\uDDA5️</1> Je suis développeur autodidacte depuis plusieurs années. J'ai démarré lorsque j'ai eu un ordinateur - j'avais 12 ans.",
   "about.course": "<1>⚛️</1> Depuis j'apprends tous les jours, et suis développeur professionnel depuis 10 ans. J'ai démarré avec Ruby on Rails pendant 5 ans, puis je suis allé de l'autre côté : le frontend avec React.js",
   "about.love": "<1>\uD83D\uDCF1</1> J'adore JavaScript, TypeScript et React. C'est naturellement que je me suis dirigé vers React-native : écrire du code React, pour les mobiles.",
@@ -16,6 +16,15 @@
   "skills.name": "compétences",
   "skills.title": "Ce qu'incluent<br />mes Compétences",
   "skills.description": "Ce sont les mots avec lesquels je vis dans tout ce que je fais. Chaque histoire que je raconte, chaque application que je crée et chaque ligne de code que j'écris ne doit pas seulement être belle.",
+
+  "skills.list.title": "Mes compétences (liste non exhaustive) :",
+  "skills.list.brain": "Je fais beaucoup de veille technique, ce qui me permet de connaître les derniers outils soit à la mode, soit adaptés aux besoins. Que ce soit pour récupérer de la donnée ou bien la mettre en cache, j'ai ce qu'il faut !",
+  "skills.list.strong": "Je sais mener un projet. Choix des technos, architecture de l'application, création d'outils lorsque nécessaire…",
+  "skills.list.rocket": "Je peux faire monter en compétence votre équipe. Partage de bonnes pratiques, explication de certains pans fonctionnels, …",
+  "skills.list.gorilla": "J'écris du code élégant, robuste, évolutif, fiable. Pour ce faire, j'utilise :",
+  "skills.list.tools.typescript": "TypeScript : la base de tout projet JavaScript robuste. C'est grâce à TypeScript que je m'assure que les effets indésirables n'existent pas;",
+  "skills.list.tools.storybook": "Storybook : pour développer les composants en isolation, et les tester manuellement hors de tout cadre;",
+  "skills.list.tools.jest": "Jest : pour tester les composants ou les morceaux de code qui nécessitent d'être testés. Pas plus qu'il n'en faut, juste le nécessaire pour s'assurer qu'aucun problème ne peut survenir sans s'y attendre.",
 
   "experiences.name": "expériences",
   "experiences.title": "Où j'ai<br />travaillé !"
