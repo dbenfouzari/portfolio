@@ -71,8 +71,8 @@ const SkillsSection: FC<SkillsProps> = () => {
             <Image
               alt="React skill"
               src="/assets/react.svg"
-              width={100}
-              height={100}
+              width={60}
+              height={60}
               className={classes.skill_logo}
             />
 
@@ -83,8 +83,8 @@ const SkillsSection: FC<SkillsProps> = () => {
             <Image
               alt="TypeScript skill"
               src="/assets/typescript.svg"
-              width={100}
-              height={100}
+              width={60}
+              height={60}
               className={classes.skill_logo}
             />
 
@@ -95,8 +95,8 @@ const SkillsSection: FC<SkillsProps> = () => {
             <Image
               alt="Jest skill"
               src="/assets/jest.svg"
-              width={100}
-              height={100}
+              width={60}
+              height={60}
               className={classes.skill_logo}
             />
 
@@ -107,8 +107,8 @@ const SkillsSection: FC<SkillsProps> = () => {
             <Image
               alt="Storybook skill"
               src="/assets/storybook.svg"
-              width={100}
-              height={100}
+              width={60}
+              height={60}
               className={classes.skill_logo}
             />
 
@@ -120,8 +120,8 @@ const SkillsSection: FC<SkillsProps> = () => {
               alt="React-Native skill"
               src="/assets/react-native.png"
               objectFit="contain"
-              width={100}
-              height={100}
+              width={60}
+              height={60}
               className={classes.skill_logo}
             />
 
@@ -132,8 +132,8 @@ const SkillsSection: FC<SkillsProps> = () => {
             <Image
               alt="Flutter skill"
               src="/assets/flutter.svg"
-              width={100}
-              height={100}
+              width={60}
+              height={60}
               className={classes.skill_logo}
             />
 
