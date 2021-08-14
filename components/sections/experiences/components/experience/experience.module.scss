@@ -6,7 +6,7 @@
   display: flex;
   transition: transform 0.2s ease;
 
-  &:hover {
+  &__clickable:hover {
     transform: scale(1.1);
   }
 }
