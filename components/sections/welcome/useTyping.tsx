@@ -1,37 +1,40 @@
 import { useTranslation } from 'next-i18next';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import Typed from 'typed.js';
 
 const useTyping = <T extends HTMLElement>() => {
   const { t } = useTranslation('sections');
 
-  const TYPING_ELEMENTS = [
-    {
-      text: t('welcome.roles.web'),
-      image: '/assets/html5.svg',
-      color: '#E34F26',
-    },
-    {
-      text: t('welcome.roles.mobile'),
-      image: '/assets/mobile.svg',
-      color: '#E0995E',
-    },
-    {
-      text: t('welcome.roles.react'),
-      image: '/assets/react.svg',
-      color: '#61DAFB',
-    },
-    {
-      text: t('welcome.roles.react-native'),
-      image: '/assets/react-native.png',
-      color: '#61DAFB',
-    },
-    {
-      text: t('welcome.roles.typescript'),
-      image: '/assets/typescript.svg',
-      color: '#3178c6',
-    },
-  ];
+  const TYPING_ELEMENTS = useMemo(
+    () => [
+      {
+        text: t('welcome.roles.web'),
+        image: '/assets/html5.svg',
+        color: '#E34F26',
+      },
+      {
+        text: t('welcome.roles.mobile'),
+        image: '/assets/mobile.svg',
+        color: '#E0995E',
+      },
+      {
+        text: t('welcome.roles.react'),
+        image: '/assets/react.svg',
+        color: '#61DAFB',
+      },
+      {
+        text: t('welcome.roles.react-native'),
+        image: '/assets/react-native.png',
+        color: '#61DAFB',
+      },
+      {
+        text: t('welcome.roles.typescript'),
+        image: '/assets/typescript.svg',
+        color: '#3178c6',
+      },
+    ],
+    [t],
+  );
 
   // Create reference to store the DOM element containing the animation.
   const el = useRef<T>(null);
@@ -69,7 +72,7 @@ const useTyping = <T extends HTMLElement>() => {
     return () => {
       typed.current?.destroy();
     };
-  }, []);
+  }, [TYPING_ELEMENTS]);
 
   return [el, imageUrl, color] as const;
 };

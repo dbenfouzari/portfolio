@@ -62,14 +62,20 @@ const AppBarMobile: FC<MobileProps> = ({ children }) => {
         </div>
 
         <div className={classes.flag_wrapper}>
-          <Link href="/" locale={linkLocale}>
-            <Image src={svgUrl} width={40} height={40} objectFit="contain" />
+          <Link passHref href="/" locale={linkLocale}>
+            <Image alt="Change language" src={svgUrl} width={40} height={40} objectFit="contain" />
           </Link>
         </div>
 
         <div className={classes.drawer_button} onClick={handleDrawerOpenPress}>
           <div className={classes.opener}>
-            <Image src="/drawer.svg" width={30} height={30} className={classes.drawer_icon} />
+            <Image
+              alt="Open menu"
+              src="/drawer.svg"
+              width={30}
+              height={30}
+              className={classes.drawer_icon}
+            />
           </div>
         </div>
       </div>
