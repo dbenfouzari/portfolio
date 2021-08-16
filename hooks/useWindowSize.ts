@@ -7,7 +7,8 @@ type WindowSize = { width?: number; height?: number };
 
 const getSizeFromWidth = (width?: number) => {
   if (!width) return null;
-  if (width > 650) return 'md';
+  // Same as styles/_variables.scss $breakpoint
+  if (width > 860) return 'md';
   return 'xs';
 };
 

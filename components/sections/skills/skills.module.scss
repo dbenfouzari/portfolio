@@ -1,3 +1,5 @@
+@use "styles/variables" as v;
+
 .wrapper {
   display: flex;
   flex: 1;
@@ -51,7 +53,7 @@
 .right {
   flex: 1;
   max-width: 500px;
-  @media (max-width: 700px) {
+  @media (max-width: v.$breakpoint) {
     display: none;
   }
 }
@@ -61,7 +63,7 @@
   position: relative;
   padding-right: 96px;
   max-width: 800px;
-  @media (max-width: 700px) {
+  @media (max-width: v.$breakpoint) {
     padding-right: 0;
   }
 }
@@ -73,7 +75,7 @@
 .skills {
   display: grid;
   gap: 24px;
-  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
 }
 
 .skill_rectangle {

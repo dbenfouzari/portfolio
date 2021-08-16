@@ -1,3 +1,5 @@
+@use "styles/variables" as v;
+
 .wrapper {
   display: flex;
   flex: 1;
@@ -36,7 +38,7 @@
 }
 
 .left {
-  @media (max-width: 700px) {
+  @media (max-width: v.$breakpoint) {
     display: none;
   }
   flex: 1;
@@ -44,7 +46,7 @@
 }
 
 .right {
-  @media (max-width: 700px) {
+  @media (max-width: v.$breakpoint) {
     padding-left: 0;
   }
   flex: 1;
