@@ -41,7 +41,9 @@ const AppBar: AppBar = ({ children }) => {
 
       <div className={classes.flag_wrapper}>
         <Link passHref href="/" locale={linkLocale}>
-          <Image alt="Change language" src={svgUrl} width={40} height={40} objectFit="contain" />
+          <a>
+            <Image alt="Change language" src={svgUrl} width={40} height={40} objectFit="contain" />
+          </a>
         </Link>
       </div>
     </nav>
