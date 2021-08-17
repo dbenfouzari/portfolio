@@ -2,6 +2,7 @@ import { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
+import Footer from '../components/footer';
 import Layout from '../components/layout';
 import Section from '../components/section';
 import AboutSection from '../components/sections/about';
@@ -29,6 +30,8 @@ const Home: NextPage<HomeProps> = () => (
     <Section id="experiences">
       <ExperiencesSection />
     </Section>
+
+    <Footer />
   </Layout>
 );
 
