@@ -22,7 +22,7 @@ const ExperiencesSection: React.FC<ExperiencesProps> = () => {
           <Experience
             role="React.js / Next.js Developer"
             company="Hozana.org"
-            dateStart="2021-5"
+            dateStart="2021-05"
             picture="/experiences/hozana.jpeg"
             url="https://hozana.org/"
           />
@@ -30,8 +30,8 @@ const ExperiencesSection: React.FC<ExperiencesProps> = () => {
           <Experience
             role="React.js / Ruby on Rails Developer"
             company="Edulib"
-            dateStart="2021-3"
-            dateEnd="2021-5"
+            dateStart="2021-03"
+            dateEnd="2021-05"
             picture="/experiences/edulib.png"
             url="https://www.edulib.fr/"
           />
@@ -39,8 +39,8 @@ const ExperiencesSection: React.FC<ExperiencesProps> = () => {
           <Experience
             role="React.js / TypeScript / React-Native Developer"
             company="Dernier Cri"
-            dateStart="2019-8"
-            dateEnd="2021-3"
+            dateStart="2019-08"
+            dateEnd="2021-03"
             picture="/experiences/dernier-cri.svg"
             url="https://derniercri.io/"
           />
@@ -48,8 +48,8 @@ const ExperiencesSection: React.FC<ExperiencesProps> = () => {
           <Experience
             role="React.js / TypeScript Developer"
             company="Stadline"
-            dateStart="2016-9"
-            dateEnd="2019-7"
+            dateStart="2016-09"
+            dateEnd="2019-07"
             picture="/experiences/stadline.png"
             url="https://www.stadline.com/"
           />
@@ -57,8 +57,8 @@ const ExperiencesSection: React.FC<ExperiencesProps> = () => {
           <Experience
             role="Vue.js Developer"
             company="Seniormedia"
-            dateStart="2015-1"
-            dateEnd="2015-5"
+            dateStart="2015-01"
+            dateEnd="2015-05"
             picture="/experiences/senior-media.jpeg"
             url="https://seniormedia.fr/"
           />
@@ -66,15 +66,15 @@ const ExperiencesSection: React.FC<ExperiencesProps> = () => {
           <Experience
             role="Ruby on Rails / Angular Developer"
             company="Trip & Mates"
-            dateStart="2016-8"
-            dateEnd="2016-9"
+            dateStart="2016-08"
+            dateEnd="2016-09"
             picture="/experiences/trip-n-mates.jpeg"
           />
 
           <Experience
             role="Ruby on Rails Developer"
             company="JaiPasEnvie.com"
-            dateStart="2014-7"
+            dateStart="2014-07"
             dateEnd="2015-01"
             picture="/experiences/jaipasenvie.jpeg"
           />
@@ -82,7 +82,7 @@ const ExperiencesSection: React.FC<ExperiencesProps> = () => {
           <Experience
             role="Ruby on Rails Developer"
             company="Clic2Buy"
-            dateStart="2013-7"
+            dateStart="2013-07"
             dateEnd="2013-12"
             picture="/experiences/clic2buy.png"
             url="https://www.click2buy.com/fr/"
@@ -92,7 +92,7 @@ const ExperiencesSection: React.FC<ExperiencesProps> = () => {
             role="Ruby on Rails Developer"
             company="RankingAlive"
             dateStart="2012-11"
-            dateEnd="2013-2"
+            dateEnd="2013-02"
             picture="/experiences/ranking-alive.png"
             url="https://www.la-revanche-des-sites.fr/"
           />
@@ -100,8 +100,8 @@ const ExperiencesSection: React.FC<ExperiencesProps> = () => {
           <Experience
             role="Ruby on Rails Developer"
             company="TocLoc"
-            dateStart="2011-9"
-            dateEnd="2013-9"
+            dateStart="2011-09"
+            dateEnd="2013-09"
             picture="/experiences/tocloc.jpeg"
           />
         </div>

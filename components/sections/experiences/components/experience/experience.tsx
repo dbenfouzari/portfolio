@@ -17,8 +17,8 @@ interface Experience {
   url?: string;
 }
 
-const capitalize = (word: string) => {
-  return word.replace(/^(\w)/, (w) => w.toUpperCase());
+const capitalize = (word?: string) => {
+  return word ? word.replace(/^(\w)/, (w) => w.toUpperCase()) : '';
 };
 
 const formatDate = (date: Date | string, locale: SupportedLocale) => {
