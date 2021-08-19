@@ -15,6 +15,7 @@ interface Experience {
   company: string;
   picture?: string;
   url?: string;
+  radius?: boolean;
 }
 
 const capitalize = (word?: string) => {
@@ -46,7 +47,15 @@ const Wrapper = ({ url, children }: { url?: string; children: JSX.Element }) => 
   );
 };
 
-const Experience: FC<Experience> = ({ company, role, dateStart, dateEnd, picture, url }) => {
+const Experience: FC<Experience> = ({
+  company,
+  role,
+  dateStart,
+  dateEnd,
+  picture,
+  url,
+  radius = true,
+}) => {
   const { locale = 'en' } = useRouter();
 
   return (
@@ -69,7 +78,7 @@ const Experience: FC<Experience> = ({ company, role, dateStart, dateEnd, picture
                 src={picture}
                 width={80}
                 height={80}
-                className={classes.picture}
+                className={radius ? classes.picture : undefined}
               />
             </div>
           )}

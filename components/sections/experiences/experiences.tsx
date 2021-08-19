@@ -20,9 +20,19 @@ const ExperiencesSection: React.FC<ExperiencesProps> = () => {
 
         <div className={classes.experiences}>
           <Experience
+            role="React.js Developer"
+            company="LumApps"
+            dateStart="2021-08"
+            picture="/experiences/lumapps.svg"
+            url="https://www.lumapps.com/"
+            radius={false}
+          />
+
+          <Experience
             role="React.js / Next.js Developer"
             company="Hozana.org"
             dateStart="2021-05"
+            dateEnd="2021-08"
             picture="/experiences/hozana.jpeg"
             url="https://hozana.org/"
           />
