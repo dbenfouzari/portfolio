@@ -19,9 +19,9 @@
   "skills.description": "These are the words I live by in every story I tell, every application I create and every line of code I write.",
 
   "skills.list.title": "My skills (non-exhaustive list):",
-  "skills.list.brain": "I do a lot of technology watch, which allows me to know the latest tools either in fashion or adapted to your needs. Whether it's to retrieve data or to cache it, I have what it takes!",
+  "skills.list.brain": "I do a lot of technical monitoring, which allows me to know the latest tools either trendy or adapted to your needs. Whether it's to retrieve data or to cache it, I have what it takes!",
   "skills.list.strong": "I know how to lead a project. Choice of technologies, application architecture, creation of tools when necessary…",
-  "skills.list.rocket": "I can improve your team's skills. Sharing of good practices, explanation of certain functional areas, etc.",
+  "skills.list.rocket": "I can help your team to improve their skills. Sharing of good practices, explanation of some functional aspects, etc.",
   "skills.list.gorilla": "I write elegant, robust, scalable, reliable code. To do this, I use:",
   "skills.list.tools.typescript": "TypeScript: the foundation of any robust JavaScript project. It is thanks to TypeScript that I make sure that unwanted effects do not exist;",
   "skills.list.tools.storybook": "Storybook: to develop components in isolation, and test them manually outside of any framework;",
