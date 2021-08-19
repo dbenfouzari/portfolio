@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Trans, useTranslation } from 'next-i18next';
 import React from 'react';
 
+import Quote from '../../quote';
 import classes from './about.module.scss';
 
 const AboutSection = () => {
@@ -29,7 +30,26 @@ const AboutSection = () => {
           <Trans i18nKey="about.title" ns="sections" />
         </h3>
 
+        <Quote
+          author="Robert C. Martin"
+          cite={{
+            content: 'Clean Code: A Handbook of Agile Software Craftsmanship',
+            link: 'https://www.goodreads.com/quotes/835238-indeed-the-ratio-of-time-spent-reading-versus-writing-is',
+          }}
+        >
+          Indeed, the ratio of time spent reading versus writing is well over 10 to 1. We are
+          constantly reading old code as part of the effort to write new code. ...[Therefore,]
+          making it easy to read makes it easier to write.
+        </Quote>
+
         <div className={classes.description}>
+          <p>
+            <Trans
+              i18nKey="about.explanation"
+              ns="sections"
+              components={{ 1: <span className={classes.emoji} /> }}
+            />
+          </p>
           <p>
             <Trans
               i18nKey="about.self-taught"

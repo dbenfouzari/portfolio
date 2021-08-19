@@ -1,0 +1,22 @@
+.quote {
+  margin-top: 24px;
+
+  blockquote {
+    font-size: 16px;
+    color: rgba(var(--secondary-color__rgb), 0.6);
+
+    q:before {
+      margin-right: 4px;
+    }
+
+    q:after {
+      margin-left: 4px;
+    }
+  }
+
+  figcaption {
+    font-size: 14px;
+    color: rgba(var(--secondary-color__rgb), 0.6);
+    margin-top: 8px;
+  }
+}

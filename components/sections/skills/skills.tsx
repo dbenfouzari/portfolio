@@ -3,6 +3,7 @@ import { Trans, useTranslation } from 'next-i18next';
 import { FC } from 'react';
 
 import ProgressBar from '../../progress-bar';
+import Quote from '../../quote';
 import classes from './skills.module.scss';
 
 interface SkillsProps {}
@@ -29,6 +30,17 @@ const SkillsSection: FC<SkillsProps> = () => {
         <h3 className={classes.title}>
           <Trans i18nKey="skills.title" ns="sections" />
         </h3>
+
+        <Quote
+          author="Robert C. Martin"
+          cite={{
+            content: 'Clean Code: A Handbook of Agile Software Craftsmanship',
+            link: 'https://www.goodreads.com/quotes/835238-indeed-the-ratio-of-time-spent-reading-versus-writing-is',
+          }}
+        >
+          Master programmers think of systems as stories to be told rather than programs to be
+          written.
+        </Quote>
 
         <div className={classes.description}>{t('skills.description')}</div>
 
