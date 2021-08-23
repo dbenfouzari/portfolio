@@ -6,6 +6,7 @@
   "welcome.roles.react-native": "Développeur React-Native",
   "welcome.roles.typescript": "Développeur TypeScript",
   "welcome.presentation": "<span>Développeur</span> Web et Mobile travaillant dans le monde du développement depuis 10 ans, spécialisé en React/React-Native.",
+  "welcome.location": "Emplacement",
 
   "about.name": "à propos de moi",
   "about.title": "Besoin d'un Code Robuste & Élégant ?\n<br />Je peux vous aider !",

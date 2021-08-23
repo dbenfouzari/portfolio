@@ -39,6 +39,11 @@ const WelcomeSection: FC<WelcomeProps> = () => {
                 </a>
               </dd>
             </div>
+
+            <div>
+              <dt>{t('welcome.location')}</dt>
+              <dd>Lille, Remote</dd>
+            </div>
           </dl>
         </div>
       </div>
