@@ -1,14 +1,11 @@
 import { useTranslation } from 'next-i18next';
-import { FC } from 'react';
 
 import Heading from './heading';
 import useAnimatedImage from './useAnimatedImage';
 import useTyping from './useTyping';
 import classes from './welcome.module.scss';
 
-interface WelcomeProps {}
-
-const WelcomeSection: FC<WelcomeProps> = () => {
+const WelcomeSection = () => {
   const [typingRef, imageUrl, color] = useTyping<HTMLHeadingElement>();
   const ImageElement = useAnimatedImage(imageUrl);
   const { t } = useTranslation('sections');

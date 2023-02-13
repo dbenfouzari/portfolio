@@ -1,5 +1,3 @@
-import { FC } from 'react';
-
 import classes from './quote.module.scss';
 
 interface QuoteProps {
@@ -11,7 +9,7 @@ interface QuoteProps {
   children: string;
 }
 
-const Quote: FC<QuoteProps> = ({ cite, author, children }) => (
+const Quote = ({ cite, author, children }: QuoteProps) => (
   <figure className={classes.quote}>
     <blockquote>
       <q cite={cite.link}>{children}</q>

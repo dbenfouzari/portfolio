@@ -29,11 +29,9 @@ const AppBar: AppBar = ({ children }) => {
     <nav className={classes.app_bar}>
       <div className={classes.title}>
         <Link href="/" passHref>
-          <a>
-            Donovan
-            <br />
-            BENFOUZARI
-          </a>
+          Donovan
+          <br />
+          BENFOUZARI
         </Link>
       </div>
 
@@ -41,9 +39,7 @@ const AppBar: AppBar = ({ children }) => {
 
       <div className={classes.flag_wrapper}>
         <Link passHref href="/" locale={linkLocale}>
-          <a>
-            <Image alt="Change language" src={svgUrl} width={40} height={40} objectFit="contain" />
-          </a>
+          <Image alt="Change language" src={svgUrl} width={40} height={40} />
         </Link>
       </div>
     </nav>

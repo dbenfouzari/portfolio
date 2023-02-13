@@ -1,8 +1,8 @@
-import { FC, SVGProps } from 'react';
+import { SVGProps } from 'react';
 
 interface MailLogoProps extends SVGProps<SVGSVGElement> {}
 
-const MailLogo: FC<MailLogoProps> = ({ fill = '#000', ...props }) => (
+const MailLogo = ({ fill = '#000', ...props }: MailLogoProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"

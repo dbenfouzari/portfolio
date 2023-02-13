@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { FC, useCallback, useState } from 'react';
+import React, { PropsWithChildren, useCallback, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
 import classes from './mobile.module.scss';
@@ -22,7 +22,7 @@ const drawerClassNames = {
   exitActive: classes.drawer_transition__exit_active,
 };
 
-const AppBarMobile: FC<MobileProps> = ({ children }) => {
+const AppBarMobile = ({ children }: PropsWithChildren<MobileProps>) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleDrawerOpenPress = useCallback(() => {
@@ -53,17 +53,15 @@ const AppBarMobile: FC<MobileProps> = ({ children }) => {
       <div className={classes.mobile}>
         <div className={classes.title}>
           <Link href="/" passHref>
-            <a>
-              Donovan
-              <br />
-              BENFOUZARI
-            </a>
+            Donovan
+            <br />
+            BENFOUZARI
           </Link>
         </div>
 
         <div className={classes.flag_wrapper}>
-          <Link passHref href="/" locale={linkLocale}>
-            <Image alt="Change language" src={svgUrl} width={40} height={40} objectFit="contain" />
+          <Link passHref href="/" locale={linkLocale} legacyBehavior>
+            <Image alt="Change language" src={svgUrl} width={40} height={40} />
           </Link>
         </div>
 
