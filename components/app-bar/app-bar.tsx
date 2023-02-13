@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { FC, ReactElement } from 'react';
@@ -29,7 +29,9 @@ const AppBar: AppBar = ({ children }) => {
     <nav className={classes.app_bar}>
       <div className={classes.title}>
         <Link href="/" passHref>
-          Donovan<br />BENFOUZARI
+          Donovan
+          <br />
+          BENFOUZARI
         </Link>
       </div>
 
@@ -37,9 +39,7 @@ const AppBar: AppBar = ({ children }) => {
 
       <div className={classes.flag_wrapper}>
         <Link passHref href="/" locale={linkLocale}>
-
           <Image alt="Change language" src={svgUrl} width={40} height={40} objectFit="contain" />
-
         </Link>
       </div>
     </nav>

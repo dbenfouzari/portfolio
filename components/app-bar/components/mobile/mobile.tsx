@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { FC, useCallback, useState } from 'react';
@@ -34,47 +34,51 @@ const AppBarMobile: FC<MobileProps> = ({ children }) => {
   const svgUrl = locale === 'fr' ? '/en.svg' : '/fr.svg';
   const linkLocale = locale === 'fr' ? 'en' : 'fr';
 
-  return <>
-    <CSSTransition in={isOpen} timeout={300} classNames={overlayClassNames} unmountOnExit>
-      <div className={classes.overlay} onClick={handleDrawerOpenPress} />
-    </CSSTransition>
+  return (
+    <>
+      <CSSTransition in={isOpen} timeout={300} classNames={overlayClassNames} unmountOnExit>
+        <div className={classes.overlay} onClick={handleDrawerOpenPress} />
+      </CSSTransition>
 
-    <CSSTransition in={isOpen} timeout={300} classNames={drawerClassNames} unmountOnExit>
-      <nav className={classes.drawer}>
-        <div className={classes.nav_title}>
-          <span>Navigation</span>
+      <CSSTransition in={isOpen} timeout={300} classNames={drawerClassNames} unmountOnExit>
+        <nav className={classes.drawer}>
+          <div className={classes.nav_title}>
+            <span>Navigation</span>
+          </div>
+
+          <ul className={classes.links}>{children}</ul>
+        </nav>
+      </CSSTransition>
+
+      <div className={classes.mobile}>
+        <div className={classes.title}>
+          <Link href="/" passHref>
+            Donovan
+            <br />
+            BENFOUZARI
+          </Link>
         </div>
 
-        <ul className={classes.links}>{children}</ul>
-      </nav>
-    </CSSTransition>
+        <div className={classes.flag_wrapper}>
+          <Link passHref href="/" locale={linkLocale} legacyBehavior>
+            <Image alt="Change language" src={svgUrl} width={40} height={40} objectFit="contain" />
+          </Link>
+        </div>
 
-    <div className={classes.mobile}>
-      <div className={classes.title}>
-        <Link href="/" passHref>
-          Donovan<br />BENFOUZARI
-        </Link>
-      </div>
-
-      <div className={classes.flag_wrapper}>
-        <Link passHref href="/" locale={linkLocale} legacyBehavior>
-          <Image alt="Change language" src={svgUrl} width={40} height={40} objectFit="contain" />
-        </Link>
-      </div>
-
-      <div className={classes.drawer_button} onClick={handleDrawerOpenPress}>
-        <div className={classes.opener}>
-          <Image
-            alt="Open menu"
-            src="/drawer.svg"
-            width={30}
-            height={30}
-            className={classes.drawer_icon}
-          />
+        <div className={classes.drawer_button} onClick={handleDrawerOpenPress}>
+          <div className={classes.opener}>
+            <Image
+              alt="Open menu"
+              src="/drawer.svg"
+              width={30}
+              height={30}
+              className={classes.drawer_icon}
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </>;
+    </>
+  );
 };
 
 export default AppBarMobile;
