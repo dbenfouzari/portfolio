@@ -1,25 +1,22 @@
 import Image from 'next/image';
 import { Trans, useTranslation } from 'next-i18next';
-import { FC } from 'react';
 
 import ProgressBar from '../../progress-bar';
 import Quote from '../../quote';
 import classes from './skills.module.scss';
-
-interface SkillsProps {}
 
 interface AboutItemProps {
   icon: string | JSX.Element;
   text: string;
 }
 
-const AboutItem: FC<AboutItemProps> = ({ icon, text }) => (
+const AboutItem = ({ icon, text }: AboutItemProps) => (
   <li>
     {icon} {text}
   </li>
 );
 
-const SkillsSection: FC<SkillsProps> = () => {
+const SkillsSection = () => {
   const { t } = useTranslation('sections');
 
   return (

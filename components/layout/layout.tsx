@@ -1,13 +1,13 @@
 import { useTranslation } from 'next-i18next';
-import React, { FC } from 'react';
+import React, { PropsWithChildren } from 'react';
 
 import { APP_BAR_HEIGHT } from '../../constants';
 import AppBar from '../app-bar';
 import classes from './layout.module.scss';
 
-interface LayoutTwoProps {}
+interface LayoutProps {}
 
-const Layout: FC<LayoutTwoProps> = ({ children }) => {
+const Layout = ({ children }: PropsWithChildren<LayoutProps>) => {
   const { t } = useTranslation('appbar');
 
   return (

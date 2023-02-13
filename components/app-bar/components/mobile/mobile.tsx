@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { FC, useCallback, useState } from 'react';
+import React, { PropsWithChildren, useCallback, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
 import classes from './mobile.module.scss';
@@ -22,7 +22,7 @@ const drawerClassNames = {
   exitActive: classes.drawer_transition__exit_active,
 };
 
-const AppBarMobile: FC<MobileProps> = ({ children }) => {
+const AppBarMobile = ({ children }: PropsWithChildren<MobileProps>) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleDrawerOpenPress = useCallback(() => {

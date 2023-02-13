@@ -1,7 +1,6 @@
 import classNames from 'classnames';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import { FC } from 'react';
 
 import { MONTHS } from '../../../../months';
 import classes from './experience.module.scss';
@@ -47,7 +46,7 @@ const Wrapper = ({ url, children }: { url?: string; children: JSX.Element }) => 
   );
 };
 
-const Experience: FC<Experience> = ({
+const Experience = ({
   company,
   role,
   dateStart,
@@ -55,7 +54,7 @@ const Experience: FC<Experience> = ({
   picture,
   url,
   radius = false,
-}) => {
+}: Experience) => {
   const { locale = 'en' } = useRouter();
 
   return (
