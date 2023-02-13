@@ -8,7 +8,9 @@ interface HeadingProps {
 const Heading = forwardRef<HTMLHeadingElement, HeadingProps>(({ color }, ref) => (
   <div>
     <style jsx>{`
-      --text-color: ${color};
+      * {
+        --text-color: ${color};
+      }
     `}</style>
     <h1>
       <Trans i18nKey="welcome.heading" ns="sections" />

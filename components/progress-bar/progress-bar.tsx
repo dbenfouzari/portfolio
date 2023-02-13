@@ -16,7 +16,9 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ label, percentage }) => (
     </div>
     <div className={classes.outer}>
       <style jsx>{`
-        --bar-fill: ${percentage}%;
+        * {
+          --bar-fill: ${percentage}%;
+        }
       `}</style>
       <div className={classes.inner} />
     </div>

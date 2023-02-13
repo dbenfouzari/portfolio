@@ -13,7 +13,9 @@ const Layout: FC<LayoutTwoProps> = ({ children }) => {
   return (
     <div className={classes.layout}>
       <style jsx>{`
-        --app-bar-height: ${APP_BAR_HEIGHT}px;
+        * {
+          --app-bar-height: ${APP_BAR_HEIGHT}px;
+        }
       `}</style>
 
       <AppBar>
