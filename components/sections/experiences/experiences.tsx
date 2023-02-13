@@ -20,12 +20,29 @@ const ExperiencesSection: React.FC<ExperiencesProps> = () => {
 
         <div className={classes.experiences}>
           <Experience
+            role="React-Native Lead Developer"
+            company="pass&nbsp;Culture"
+            dateStart="2022-10"
+            picture="/experiences/pass.svg"
+            url="https://pass.culture.fr/"
+          />
+
+          <Experience
             role="React.js Developer"
+            company="Ogury&nbsp;Ltd"
+            dateStart="2022-07"
+            dateEnd="2022-09"
+            picture="/experiences/ogury.svg"
+            url="https://ogury.com/"
+          />
+
+          <Experience
+            role="React.js Lead Developer"
             company="LumApps"
             dateStart="2021-08"
+            dateEnd="2022-06"
             picture="/experiences/lumapps.svg"
             url="https://www.lumapps.com/"
-            radius={false}
           />
 
           <Experience
@@ -47,7 +64,7 @@ const ExperiencesSection: React.FC<ExperiencesProps> = () => {
           />
 
           <Experience
-            role="React.js / TypeScript / React-Native Developer"
+            role="React.js / React-Native Lead Developer"
             company="Dernier Cri"
             dateStart="2019-08"
             dateEnd="2021-03"
@@ -62,6 +79,7 @@ const ExperiencesSection: React.FC<ExperiencesProps> = () => {
             dateEnd="2019-07"
             picture="/experiences/stadline.png"
             url="https://www.stadline.com/"
+            radius
           />
 
           <Experience
@@ -79,6 +97,7 @@ const ExperiencesSection: React.FC<ExperiencesProps> = () => {
             dateStart="2016-08"
             dateEnd="2016-09"
             picture="/experiences/trip-n-mates.jpeg"
+            radius
           />
 
           <Experience
@@ -113,6 +132,7 @@ const ExperiencesSection: React.FC<ExperiencesProps> = () => {
             dateStart="2011-09"
             dateEnd="2013-09"
             picture="/experiences/tocloc.jpeg"
+            radius
           />
         </div>
       </div>

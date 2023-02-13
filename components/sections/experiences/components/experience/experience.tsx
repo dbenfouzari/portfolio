@@ -54,7 +54,7 @@ const Experience: FC<Experience> = ({
   dateEnd,
   picture,
   url,
-  radius = true,
+  radius = false,
 }) => {
   const { locale = 'en' } = useRouter();
 

@@ -117,6 +117,18 @@ const SkillsSection: FC<SkillsProps> = () => {
 
           <div className={classes.skill_rectangle}>
             <Image
+              alt="Testing-library skill"
+              src="/assets/testing-library.png"
+              width={60}
+              height={60}
+              className={classes.skill_logo}
+            />
+
+            <span>Testing Library</span>
+          </div>
+
+          <div className={classes.skill_rectangle}>
+            <Image
               alt="Storybook skill"
               src="/assets/storybook.svg"
               width={60}

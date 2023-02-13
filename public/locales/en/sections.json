@@ -15,7 +15,7 @@
   "about.course": "<1>⚛️</1> Since then I'm learning every day, and I've been a professional developer for 10 years. I started with Ruby on Rails for 5 years, then I went to the other side: the frontend with React.js.",
   "about.love": "<1>\uD83D\uDCF1</1> I really love JavaScript, TypeScript and React. This is why I went to React-Native : write React code, for mobiles.",
 
-  "skills.name": "Skills",
+  "skills.name": "skills",
   "skills.title": "What My Development<br />Skills Include",
   "skills.description": "These are the words I live by in every story I tell, every application I create and every line of code I write.",
 
