@@ -1,4 +1,5 @@
-import Image from 'next/legacy/image';
+import Image from 'next/image';
+import { CSSProperties } from 'react';
 
 import classes from './welcome.module.scss';
 
@@ -7,12 +8,17 @@ const useAnimatedImage = (imageUrl: string): JSX.Element => (
     key={imageUrl}
     alt="Technology logo"
     src={imageUrl}
-    layout="responsive"
     width={500}
     height={500}
-    objectFit="contain"
     className={classes.logo}
+    style={style}
   />
 );
+
+const style: CSSProperties = {
+  objectFit: 'contain',
+  height: '100%',
+  width: '100%',
+};
 
 export default useAnimatedImage;

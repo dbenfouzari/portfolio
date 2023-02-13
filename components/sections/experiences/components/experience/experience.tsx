@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { FC } from 'react';
 
@@ -74,7 +74,8 @@ const Experience: FC<Experience> = ({
           {picture && (
             <div className="picture">
               <Image
-                alt="Company Picture"
+                alt={`${company} logo`}
+                title={`${company} logo`}
                 src={picture}
                 width={80}
                 height={80}

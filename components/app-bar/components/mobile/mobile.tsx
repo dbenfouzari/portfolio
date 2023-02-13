@@ -1,4 +1,4 @@
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { FC, useCallback, useState } from 'react';
@@ -61,7 +61,7 @@ const AppBarMobile: FC<MobileProps> = ({ children }) => {
 
         <div className={classes.flag_wrapper}>
           <Link passHref href="/" locale={linkLocale} legacyBehavior>
-            <Image alt="Change language" src={svgUrl} width={40} height={40} objectFit="contain" />
+            <Image alt="Change language" src={svgUrl} width={40} height={40} />
           </Link>
         </div>
 

@@ -1,4 +1,4 @@
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { FC, ReactElement } from 'react';
@@ -39,7 +39,7 @@ const AppBar: AppBar = ({ children }) => {
 
       <div className={classes.flag_wrapper}>
         <Link passHref href="/" locale={linkLocale}>
-          <Image alt="Change language" src={svgUrl} width={40} height={40} objectFit="contain" />
+          <Image alt="Change language" src={svgUrl} width={40} height={40} />
         </Link>
       </div>
     </nav>

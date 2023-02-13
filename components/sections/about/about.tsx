@@ -1,4 +1,4 @@
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import { Trans, useTranslation } from 'next-i18next';
 import React from 'react';
 
@@ -16,10 +16,12 @@ const AboutSection = () => {
           src="/me-dc.jpeg"
           width={500}
           height={500}
-          layout="responsive"
           className={classes.logo}
-          objectFit="cover"
-          objectPosition="left top"
+          sizes="100vw"
+          style={{
+            objectFit: 'cover',
+            objectPosition: 'left top',
+          }}
         />
       </div>
 

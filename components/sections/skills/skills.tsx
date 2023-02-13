@@ -1,4 +1,4 @@
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import { Trans, useTranslation } from 'next-i18next';
 import { FC } from 'react';
 
@@ -86,6 +86,9 @@ const SkillsSection: FC<SkillsProps> = () => {
               width={60}
               height={60}
               className={classes.skill_logo}
+              style={{
+                height: 'auto',
+              }}
             />
 
             <span>React.js</span>
@@ -98,6 +101,9 @@ const SkillsSection: FC<SkillsProps> = () => {
               width={60}
               height={60}
               className={classes.skill_logo}
+              style={{
+                height: 'auto',
+              }}
             />
 
             <span>TypeScript</span>
@@ -110,6 +116,9 @@ const SkillsSection: FC<SkillsProps> = () => {
               width={60}
               height={60}
               className={classes.skill_logo}
+              style={{
+                height: 'auto',
+              }}
             />
 
             <span>Jest</span>
@@ -122,6 +131,9 @@ const SkillsSection: FC<SkillsProps> = () => {
               width={60}
               height={60}
               className={classes.skill_logo}
+              style={{
+                height: 'auto',
+              }}
             />
 
             <span>Testing Library</span>
@@ -134,6 +146,9 @@ const SkillsSection: FC<SkillsProps> = () => {
               width={60}
               height={60}
               className={classes.skill_logo}
+              style={{
+                height: 'auto',
+              }}
             />
 
             <span>Storybook</span>
@@ -143,10 +158,12 @@ const SkillsSection: FC<SkillsProps> = () => {
             <Image
               alt="React-Native skill"
               src="/assets/react-native.png"
-              objectFit="contain"
               width={60}
               height={60}
               className={classes.skill_logo}
+              style={{
+                height: 'auto',
+              }}
             />
 
             <span>React-Native</span>
@@ -159,6 +176,9 @@ const SkillsSection: FC<SkillsProps> = () => {
               width={60}
               height={60}
               className={classes.skill_logo}
+              style={{
+                height: 'auto',
+              }}
             />
 
             <span>Flutter</span>
